@@ -129,48 +129,59 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-/* toast de cuando la paso */
+/* Toast de éxito */
 .toast {
+    position: fixed;          /* No mueve los elementos */
+    top: 20px;                /* Arriba */
+    left: 50%;                /* Centro horizontal */
+    transform: translateX(-50%) translateY(-20px);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 20px;
-    right: 20px;
+
     background: #2DBD4E;
     color: white;
     padding: 12px 20px;
     border-radius: 8px;
+
     opacity: 0;
-    transform: translateY(20px);
     pointer-events: none;
+
     transition: opacity 0.5s ease, transform 0.5s ease;
     font-size: 14px;
 }
 
 .toast.show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0); /* Animación suave */
 }
 
-/*toast que no la paso*/
+/* Toast de error */
 .toast-error {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 20px;
-    right: 20px;
+
     background: #C21B1B;
     color: white;
     padding: 12px 20px;
     border-radius: 8px;
+
     opacity: 0;
-    transform: translateY(20px);
     pointer-events: none;
+
     transition: opacity 0.5s ease, transform 0.5s ease;
     font-size: 14px;
 }
 
 .toast-error.show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
 }
+

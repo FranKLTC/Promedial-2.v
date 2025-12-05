@@ -37,9 +37,9 @@ function calcular(){
     document.getElementById('result-content-prod').innerHTML = suma.toFixed(2);
     
     if (suma >= 3.0) {
-        showToastOkay("Felicitaciones, pasaste la materia");
+        showToastOkay("Felicitaciones, pasaste la materia", "#2DBD4E");
     }   else {  
-        showToastError("No pasaste la materia");
+        showToastError("No pasaste la materia", "#FF4C4C");
     }
 }
 
