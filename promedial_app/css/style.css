@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+
+}
+
+body{
+    background-color: white;
+}
+
+/**/
+header{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/**/
+.cuts-content{
+    margin: 0;
+    width: 200px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    gap: 10px;
+}
+
+.description{
+    background-color: #262626;
+    width: 200px;
+    display: flex;
+    padding: 1rem;
+    font-style: italic;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-p-description{
+    font-size: 12px;
+    text-align: center;
+    width: 200px;
+    font-size: 9px;
+    justify-content: center;
+}
+
+
+.hero-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: column;
+   
+}
+
+.cut{
+    background-color: #844EF5;
+    color: white;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+
+.actions-buttons{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.p-info{
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.actions{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+#btn-calculate{
+    background-color: #844EF5;
+    color: white;
+}
+
+#btn-calculate:hover{
+    transition: 0.3s;
+    border: solid #844EF5;
+    background-color: white;
+    color: #844EF5;
+}
+
+#btn-clean{
+    background-color: white;
+    color: #844EF5;
+    
+}
+
+#btn-clean:hover{
+    transition: 0.3s;
+    background-color: #844EF5;
+    color: white;
+    
+}
+
+/* Chrome, Edge, Opera, Safari */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.toast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    background: #2DBD4E;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    font-size: 14px;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}

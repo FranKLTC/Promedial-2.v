@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <header >
+        <nav>
+            <div class="navbar-title">
+                <h1>Promedial</h1>      
+            </div>       
+        </nav>
+        <div id="toast" class="toast">Promedio calculado correctamente</div>
+    </header>
+    
+    <main class="main">
+        <div class="hero">
+            <div class="hero-card">
+                <div class="cuts-content">
+                    <p class="result-content" id="result-content-prod">0.0</p>
+                    <div class="cuts-inputs">
+                        <p class="p-info">Ingrese las notas</p>
+                        <input class="cut" type="number" id="cut1">
+                        <input class="cut" type="number" id="cut2">
+                        <input class="cut" type="number" id="cut3">
+                        <input class="cut" type="number" id="cut4">
+                    </div>
+                    <div class="actions-buttons">
+                        <button id="btn-calculate" onclick="calcular()" class="actions">Calcular</button>
+                        <button id="btn-clean" onclick="limpiar()" class="actions">Limpiar </button>
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="info-p-description">Cada cuadrícula está configurada con el porcentaje correspondiente a cada corte, lo que hace más fácil realizar los cálculos.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="info=footer">
+                        
+        </div>
+    </footer>
+</body>
+</html>
