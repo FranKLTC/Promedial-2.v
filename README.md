@@ -1,7 +1,17 @@
-# Promedial – Calculadora de Notas
+# Promedial – Calculadora de Cortes Académicos
 
-Este proyecto permite calcular de forma sencilla los promedios académicos basados en los 4 cortes que maneja la Universidad de Cartagena.  
-Cada cuadrícula está configurada con el porcentaje correspondiente a cada corte (20%, 20%, 20%, 40%) para facilitar el cálculo final.
+Este proyecto nace de la necesidad de calcular cuánto debemos sacar en el **último corte** para poder aprobar una asignatura, basándonos en el sistema de calificaciones utilizado actualmente en el **Centro Tutorial de Cartagena**.  
+
+El sistema maneja **4 cortes académicos**, distribuidos así:
+- **Corte 1:** 20%  
+- **Corte 2:** 20%  
+- **Corte 3:** 20%  
+- **Corte 4:** 40%  
+
+La herramienta permite ingresar las notas obtenidas en cada corte y calcular automáticamente:
+- El promedio acumulado,
+- La nota necesaria en el último corte para aprobar,
+- Y el resultado final una vez ingresadas todas las calificaciones.
 
 ---
 
@@ -17,17 +27,21 @@ Cada cuadrícula está configurada con el porcentaje correspondiente a cada cort
 ---
 
 ## 🚀 Funcionalidades
-- Ingreso de notas por cada corte.  
-- Cálculo automático del promedio final.  
-- Diseño claro y fácil de usar.  
-- Lógica desarrollada con **JavaScript**.  
-- Estilos realizados con **CSS**.  
-- Control de versiones con **Git**.
+- Cálculo del promedio según cada corte.
+- Determinación de la nota mínima necesaria en el último corte para aprobar.
+- Interfaz clara, rápida y fácil de usar.
+- Sistema basado completamente en los porcentajes oficiales del Centro Tutorial de Cartagena.
+
+---
+
+## 📘 Objetivo del proyecto
+Ayudar a estudiantes a conocer su rendimiento real y a planear estrategias para aprobar sus materias.  
+La plataforma facilita el cálculo sin necesidad de hacerlo manualmente, evitando errores y ahorrando tiempo.
 
 ---
 
 ## 🌐 Publicación
-El proyecto puede publicarse fácilmente mediante **GitHub Pages** para hacerlo accesible desde cualquier dispositivo.
+El proyecto puede visualizarse públicamente a través de **GitHub Pages**.
 
 ---
 
