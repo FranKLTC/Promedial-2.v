@@ -1,4 +1,4 @@
-function showToast(message) {
+function showToastOkay(message) {
     const toast = document.getElementById("toast");
     toast.textContent = message;
     toast.classList.add("show");
@@ -7,6 +7,16 @@ function showToast(message) {
         toast.classList.remove("show");
     }, 3000); // duración del toast
 }
+function showToastError(message) {
+    const toast = document.getElementById("toast-error");
+    toast.textContent = message;
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 3000); // duración del toast
+}
+
 
 function calcular(){
     const numero1 = Number(document.getElementById('cut1').value)
@@ -25,7 +35,12 @@ function calcular(){
     }
 
     document.getElementById('result-content-prod').innerHTML = suma.toFixed(2);
-    showToast("Promedio calculado correctamente");
+    
+    if (suma >= 3.0) {
+        showToastOkay("Felicitaciones, pasaste la materia");
+    }   else {  
+        showToastError("No pasaste la materia");
+    }
 }
 
 function limpiar(){
