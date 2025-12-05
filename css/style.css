@@ -75,6 +75,10 @@ header{
     border-radius: 7px;
 }
 
+#cut4{
+    background-color: #FF6A00;
+}
+
 .actions-buttons{
     display: flex;
     margin-top: 1rem;
