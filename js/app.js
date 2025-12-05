@@ -1,3 +1,4 @@
+// Función para mostrar un toast de éxito
 function showToastOkay(message) {
     const toast = document.getElementById("toast");
     toast.textContent = message;
@@ -7,6 +8,8 @@ function showToastOkay(message) {
         toast.classList.remove("show");
     }, 3000); // duración del toast
 }
+
+// Función para mostrar un toast de error
 function showToastError(message) {
     const toast = document.getElementById("toast-error");
     toast.textContent = message;
@@ -17,7 +20,7 @@ function showToastError(message) {
     }, 3000); // duración del toast
 }
 
-
+// Función para calcular el promedio ponderado
 function calcular(){
     const numero1 = Number(document.getElementById('cut1').value)
     const numero2 = Number(document.getElementById('cut2').value)
@@ -43,6 +46,7 @@ function calcular(){
     }
 }
 
+// Función para limpiar los campos de entrada y el resultado
 function limpiar(){
     document.getElementById('cut1').value = "";
     document.getElementById('cut2').value = "";
@@ -50,3 +54,4 @@ function limpiar(){
     document.getElementById('cut4').value = "";
     document.getElementById('result-content-prod').innerHTML = "0.0"
 }
+
